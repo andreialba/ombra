@@ -1,10 +1,6 @@
 # Ombra - Astro Restaurant Theme
 
-<<<<<<< HEAD
 [![Ombra preview](./preview.webp)](https://ombra-astro.vercel.app)
-=======
-[![Ombra preview](./public/og.png)]([https://ombra-astro.vercel.app](https://ombra-lemon.vercel.app/))
->>>>>>> 6d1da206248b7af856865276d79e7cb4c116c2f2
 
 ![Astro](https://img.shields.io/badge/Astro-5.x-ff5d01?style=for-the-badge&logo=astro&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-ready-3178c6?style=for-the-badge&logo=typescript&logoColor=white)
