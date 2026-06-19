@@ -1,12 +1,16 @@
-# Ombra
+# Ombra - Astro Restaurant Theme
 
+<<<<<<< HEAD
 [![Ombra preview](./preview.webp)](https://ombra-astro.vercel.app)
+=======
+[![Ombra preview](./public/og.png)]([https://ombra-astro.vercel.app](https://ombra-lemon.vercel.app/))
+>>>>>>> 6d1da206248b7af856865276d79e7cb4c116c2f2
 
 ![Astro](https://img.shields.io/badge/Astro-5.x-ff5d01?style=for-the-badge&logo=astro&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-ready-3178c6?style=for-the-badge&logo=typescript&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-f0e7d8?style=for-the-badge)
 
-**Preview:** https://ombra-astro.vercel.app
+**Preview:** [https://ombra-astro.vercel.app](https://ombra-lemon.vercel.app/)
 
 Ombra is a dark, editorial Astro theme for intimate restaurants, tasting counters, chefs, supper clubs, and hospitality concepts that need a fast one-page presence with strong imagery and polished SEO defaults.
 
