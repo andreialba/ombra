@@ -1,0 +1,28 @@
+{
+  "name": "ombra-astro-theme",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/sitemap": "^3.6.0",
+    "@fontsource/cormorant-garamond": "^5.2.11",
+    "@fontsource/source-sans-3": "^5.2.9",
+    "astro": "^5.16.4",
+    "sharp": "^0.34.5",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.3"
+  },
+  "engines": {
+    "node": ">=20.11.0"
+  }
+}

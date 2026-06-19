@@ -1,0 +1,41 @@
+---
+import { siteConfig } from "../config/site";
+
+type Props = {
+  title?: string;
+  description?: string;
+  image?: string;
+  type?: "website" | "article";
+  structuredData?: Record<string, unknown>;
+};
+
+const {
+  title = siteConfig.title,
+  description = siteConfig.description,
+  image,
+  type = "website",
+  structuredData,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site ?? siteConfig.url);
+const absoluteImage = image ? new URL(image, Astro.site ?? siteConfig.url) : undefined;
+const pageTitle = title === siteConfig.title ? title : `${title} | ${siteConfig.name}`;
+---
+
+<title>{pageTitle}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical.href} />
+<meta property="og:locale" content={siteConfig.locale} />
+<meta property="og:type" content={type} />
+<meta property="og:title" content={pageTitle} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical.href} />
+<meta property="og:site_name" content={siteConfig.name} />
+{absoluteImage && <meta property="og:image" content={absoluteImage.href} />}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={pageTitle} />
+<meta name="twitter:description" content={description} />
+{absoluteImage && <meta name="twitter:image" content={absoluteImage.href} />}
+{structuredData && (
+  <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+)}
