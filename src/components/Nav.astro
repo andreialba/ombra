@@ -16,5 +16,12 @@ import michelinStars from "../assets/michelin-stars.svg";
         Reserve
       </a>
     </nav>
+    <details class="mobile-nav">
+      <summary class="mobile-nav__toggle">Menu</summary>
+      <nav class="mobile-nav__panel" aria-label="Mobile navigation">
+        {siteConfig.nav.map((item) => <a href={item.href}>{item.label}</a>)}
+        <a class="button-link" href="#reserve">Reserve</a>
+      </nav>
+    </details>
   </div>
 </header>

@@ -1,4 +1,5 @@
 ---
+import { homeContent } from "../config/home";
 import { siteConfig } from "../config/site";
 
 const year = new Date().getFullYear();
@@ -8,7 +9,7 @@ const year = new Date().getFullYear();
   <div class="container footer-grid">
     <div class="footer-brand">
       <strong>{siteConfig.name.toUpperCase()}</strong>
-      <p>A counter for twelve, behind an unmarked door in the old quarter.</p>
+      <p>{homeContent.footer.tagline}</p>
     </div>
 
     <div class="footer-col">
@@ -21,9 +22,9 @@ const year = new Date().getFullYear();
 
     <div class="footer-col">
       <p class="label-eyebrow">Hours</p>
-      <p>Wed - Sat</p>
-      <p>19:30 and 21:45</p>
-      <p>Closed Sun - Tue</p>
+      <p>{siteConfig.hours.serviceDays}</p>
+      <p>{siteConfig.hours.seatings}</p>
+      <p>Closed {siteConfig.hours.closed}</p>
     </div>
 
     <div class="footer-col">
@@ -37,7 +38,7 @@ const year = new Date().getFullYear();
 
     <div class="footer-bottom">
       <p>&copy; {year} {siteConfig.name}. All rights reserved.</p>
-      <p><span class="ember-dot" aria-hidden="true"></span> The fire is lit.</p>
+      <p><span class="ember-dot" aria-hidden="true"></span> {homeContent.footer.signal}</p>
     </div>
   </div>
 </footer>
