@@ -13,4 +13,3 @@ This release includes:
 - SEO-ready defaults with canonical URLs, Open Graph, Twitter cards, Restaurant JSON-LD, sitemap generation, and dynamic `robots.txt`.
 - Optimized local imagery, self-hosted Fontsource fonts, and a production-ready static Astro build.
 - Accessible mobile navigation, labelled form controls, visible focus states, reduced-motion support, and optional reveal animations.
-- MIT license.
